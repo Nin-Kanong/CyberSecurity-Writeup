@@ -126,6 +126,7 @@ To strengthen my ability to analyze, document, and communicate complex technical
 | **Scripting** | Bash, Python (Automation & Enumeration) |
 | **Operating Systems** | Kali Linux, Windows, Ubuntu |
 | **Reporting Tools** | Markdown, Typora, LibreOffice, Obsidian |
+| **Full Stack Development (Learning)** | Python (Flask, Django), HTML, CSS, JavaScript, SQLite, REST APIs |
 
 🧠 Focus Areas:  
 Networking • Vulnerability Assessment •Penetration Tester • Exploitation • Documentation • Continuous Improvement  
@@ -140,6 +141,7 @@ Networking • Vulnerability Assessment •Penetration Tester • Exploitation �
 - 🌐 Web Application Security (OWASP Top 10 & Bug Bounty Basics)  
 - 🧩 Cyber Defense, SIEM, and Incident Response  
 - 🧰 Building automation tools in Python and Bash
+- 🧰 **Full Stack Python Development (learning)** — Flask, Django, HTML, CSS, JavaScript, and API Integration  
 
 ### 🎯 Career Goal
 To become a **Professional Ethical Hacker / Penetration Tester**, contributing to **real-world cybersecurity operations** and helping organizations strengthen their digital defenses.
