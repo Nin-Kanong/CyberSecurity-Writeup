@@ -20,13 +20,13 @@
 
 ---
 ## 📚 Table of Contents
-1. [About This Repository](#about-this-repository)
-2. [Labs & Exercises](#labs--exercises)
-3. [Projects](#projects)
-4. [Writeups & Documentation](#writeups--documentation)
-5. [Certifications & Skills](#certifications--skills)
-6. [Currently Learning & Goals](#currently-learning--goals)
-7. [Connect With Me](#connect-with-me)
+1. [About This Repository](https://github.com/Nin-Kanong/pentest-writeups/tree/main?tab=readme-ov-file#-about-this-repository)
+2. [Labs & Exercises](https://github.com/Nin-Kanong/pentest-writeups#-labs--exercises)
+3. [Projects](https://github.com/Nin-Kanong/pentest-writeups#-projects)
+4. [Writeups & Documentation](https://github.com/Nin-Kanong/pentest-writeups#-writeups--documentation)
+5. [Certifications & Skills](https://github.com/Nin-Kanong/pentest-writeups#-certifications--skills)
+6. [Currently Learning & Goals](https://github.com/Nin-Kanong/pentest-writeups?tab=readme-ov-file#-currently-learning)
+7. [Connect With Me](https://github.com/Nin-Kanong/pentest-writeups?tab=readme-ov-file#-connect-with-me)
 
 ---
 
