@@ -3,7 +3,7 @@
 
 <p align="center">
 🎓 <b>IT Student | Cybersecurity Enthusiast | Ethical Hacker in Training</b><br>
-📍 Norton University | Passionate about **Networking**, **Penetration Testing**, and **System Security** | 🧩 Building my cybersecurity portfolio step by step
+📍 Norton University | Passionate about Networking, Penetration Testing, and System Security | 🧩 Building my cybersecurity portfolio step by step
 </p>
 
 ---
