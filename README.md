@@ -18,6 +18,19 @@
 
 ---
 
+---
+## 📚 Table of Contents
+1. [About This Repository](#about-this-repository)
+2. [Labs & Exercises](#labs--exercises)
+3. [Projects](#projects)
+4. [Writeups & Documentation](#writeups--documentation)
+5. [Certifications & Skills](#certifications--skills)
+6. [Currently Learning & Goals](#currently-learning--goals)
+7. [Connect With Me](#connect-with-me)
+
+---
+
+
 ## 🧭 About This Repository
 
 This repository is my **Cybersecurity Learning Portfolio**, showcasing my progress in:
@@ -40,16 +53,19 @@ I use this repository as both a personal documentation space and a demonstration
 | Category | Description |
 |-----------|-------------|
 | [1. Information Gathering](https://github.com/Nin-Kanong/pentest-writeups/tree/main/1.%20Information_Gathering) | Using tools like Shodan, Recon-ng, and Google Dorking |
-| [2. Scanning Network](./2.%20Scanning_Network) | Nmap, Netcat, and network fingerprinting |
-| [3. Vulnerability Assessment](./3.%20Vulnerability_Assessment) | Using Nessus, OpenVAS, and Metasploit scanning modules |
-| [4. Gaining Access](./4.%20Gaining_Access) | Exploiting DVWA & Metasploit labs |
-| [5. Maintaining Access](./5.%20Maintaining_Access) | Post-exploitation and persistence methods |
-| [6. Privilege Escalation](./6.%20Privilege_Escalation) | Windows & Linux privilege escalation practice |
-| [7. Covering Tracks](./7.%20Covering_Tracks) | Cleaning logs and securing access |
-| [8. Reporting](./8.%20Reporting) | Documenting findings professionally |
-| [9. Practice Labs](./9.%20Practice_Labs) | Nmap, Bandit, VulnHub, and HackTheBox exercises |
-| [10. Challenges](./10.%20Challenges) | Capture the Flag and lab-based challenges |
-| [11. Scripting](./11.%20Scripting) | Python and Bash automation exercises |
+| [2. Scanning Network](https://github.com/Nin-Kanong/pentest-writeups/tree/main/2.%20Scanning_Network) | Nmap, Netcat, and network fingerprinting |
+| [3. Vulnerability Assessment](https://github.com/Nin-Kanong/pentest-writeups/tree/main/3.%20Vulnerability%20Assessment) | Using Nessus, OpenVAS, and Metasploit scanning modules |
+| [4. Gaining Access](https://github.com/Nin-Kanong/pentest-writeups/tree/main/4.%20%20Gaining_Access) | Exploiting DVWA & Metasploit labs |
+| [5. Maintaining Access](https://github.com/Nin-Kanong/pentest-writeups/tree/main/5.%20Maintaining_Access) | Post-exploitation and persistence methods |
+| [6. Privilege Escalation](https://github.com/Nin-Kanong/pentest-writeups/tree/main/6.%20Privilege_Escalation) | Windows & Linux privilege escalation practice |
+| [7. Covering Tracks](https://github.com/Nin-Kanong/pentest-writeups/tree/main/7.%20Covering_Tracks) | Cleaning logs and securing access |
+| [8. Reporting](https://github.com/Nin-Kanong/pentest-writeups/tree/main/8.%20Reporting) | Documenting findings professionally |
+| [9. Practice Labs](https://github.com/Nin-Kanong/pentest-writeups/tree/main/9.%20Practice_Labs) | Nmap, Bandit, VulnHub, and HackTheBox exercises |
+| [10. Challenges](https://github.com/Nin-Kanong/pentest-writeups/tree/main/A.%2010.%20Challenges) | Capture the Flag and lab-based challenges |
+| [11. Scripting](https://github.com/Nin-Kanong/pentest-writeups/tree/main/B.%2011.%20Scripting) | Python and Bash automation exercises |
+| [12. Project](https://github.com/Nin-Kanong/pentest-writeups/tree/main/C.%2012.%20Projects) | Penetration Tester & VA, Hacking exam.|
+| [13. Certifications](https://github.com/Nin-Kanong/pentest-writeups/tree/main/D.%2013.%20Certifications) | SalaCyber, Udemy, Cisco|
+| [14. About Me](https://github.com/Nin-Kanong/pentest-writeups/tree/main/E.%2014.%20About_Me) | My CV and Cover Latter | 
 
 📘 Each lab follows a **structured methodology**:  
 **Objective → Tools → Procedure → Results → Lessons Learned**
@@ -63,11 +79,12 @@ I use this repository as both a personal documentation space and a demonstration
 | Project | Description |
 |----------|-------------|
 | **SEHE Final Exam Lab** | Designed and deployed a complete ethical hacking environment for final assessment |
-| **DVWA Medium-Level Exploits** | Practiced web-based vulnerability discovery and exploitation |
+| **DVWA Level Exploits** | Practiced web-based vulnerability discovery and exploitation |
 | **Network Scanning Toolkit (Python)** | Automated enumeration using Nmap and Python socket libraries |
 | **Metasploit Web VA Lab** | Performed exploitation and post-exploitation using Metasploit Framework |
 | **Web Recon Automation** | Developed scripts for Shodan and Subdomain enumeration |
 | **Active Directory Practice Setup** | Configured and tested privilege escalation in Windows Server |
+| **Vulnerability Assessment and Penetration Tester** | Do VAPT with Network, Web, Wireless|
 
 📂 Each project folder includes:
 - Problem statements and goals  
@@ -94,36 +111,35 @@ To strengthen my ability to analyze, document, and communicate complex technical
 ## 🎓 Certifications & Skills
 
 ### 🏅 Certifications
-- Certified **Network & Cybersecurity** – SalaCyber  
-- Certified **Ethical Hacking Course** – SalaCyber  
-- TryHackMe: *Pre-Security*, *Introduction to Cybersecurity*  
-- 📖 *Currently Studying:* CompTIA Security+
+- SalaCyber Network and Cybersecurity Foundation: [1.Nin Kanong.pdf](https://github.com/user-attachments/files/23103381/1.Nin.Kanong.pdf)
+- SalaCyber IT Security Essential: [2.Nin Kanong .pdf](https://github.com/user-attachments/files/23103411/2.Nin.Kanong.pdf)
+- SalaCyber Ethical Hacking Essential:[3. Nin Kanong.pdf](https://github.com/user-attachments/files/23103435/3.Nin.Kanong.pdf)
+- Complete Ethical Hacking MasterClass: [1. Nin Kanong.pdf](https://github.com/user-attachments/files/23103442/1.Nin.Kanong.pdf)
+
 
 ### 🧰 Technical Skills
 | Category | Tools & Technologies |
 |-----------|----------------------|
 | **Networking** | Nmap, Wireshark, Netcat, Shodan, Burp Suite |
 | **Pentesting** | Metasploit, SQLMap, Hydra, JohnTheRipper, DVWA |
-| **Web Security** | Burp Suite, OWASP ZAP, Dirb, Nikto |
+| **Web Security** | Burp Suite, OWASP ZAP, Dirb, Nikto, Gobuster|
 | **Scripting** | Bash, Python (Automation & Enumeration) |
-| **Operating Systems** | Kali Linux, Windows Server, Ubuntu |
-| **Version Control** | Git, GitHub |
+| **Operating Systems** | Kali Linux, Windows, Ubuntu |
 | **Reporting Tools** | Markdown, Typora, LibreOffice, Obsidian |
 
 🧠 Focus Areas:  
-Networking • Vulnerability Assessment • Exploitation • Documentation • Continuous Improvement  
+Networking • Vulnerability Assessment •Penetration Tester • Exploitation • Documentation • Continuous Improvement  
 
 ---
 
 ## 🌱 Currently Learning
 
-🚀 Expanding my knowledge through hands-on labs, certifications, and CTFs:
+🚀 Expanding my knowledge through hands-on labs, Building my cybersecurity portfolio step by step, certifications, and CTFs:
 
-- 🔒 Advanced Penetration Testing (TryHackMe / HackTheBox)  
+- 🔒 Penetration Testing (TryHackMe / HackTheBox)  
 - 🌐 Web Application Security (OWASP Top 10 & Bug Bounty Basics)  
 - 🧩 Cyber Defense, SIEM, and Incident Response  
-- ⚙️ Active Directory & Windows Server Security  
-- 🧰 Building automation tools in Python and Bash  
+- 🧰 Building automation tools in Python and Bash
 
 ### 🎯 Career Goal
 To become a **Professional Ethical Hacker / Penetration Tester**, contributing to **real-world cybersecurity operations** and helping organizations strengthen their digital defenses.
@@ -133,8 +149,7 @@ To become a **Professional Ethical Hacker / Penetration Tester**, contributing t
 ## 📈 GitHub Statistics
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=K4N0NG&show_icons=true&theme=react&hide_border=true" height="150">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=K4N0NG&layout=compact&theme=react&hide_border=true" height="150">
+  <img src="https://github.com/Nin-Kanong/pentest-writeups">
 </p>
 
 📊 **Activity Highlights**
@@ -147,8 +162,8 @@ To become a **Professional Ethical Hacker / Penetration Tester**, contributing t
 ## 🤝 Connect With Me
 
 <p align="center">
-  📧 <a href="mailto:your.email@example.com">your.email@example.com</a><br>
-  💼 <a href="#">LinkedIn</a> &nbsp;|&nbsp; 🧠 <a href="#">TryHackMe</a> &nbsp;|&nbsp; 🧩 <a href="https://github.com/K4N0NG">GitHub</a>
+  📧 <a href="ninkanong200620@gmail.com">Gmail</a><br>
+  💼 <a href="https://www.linkedin.com/in/nin-kanong/">LinkedIn</a> &nbsp;|&nbsp; 🧩 <a href="https://github.com/Nin-Kanong/pentest-writeups">GitHub</a>
 </p>
 
 ---
