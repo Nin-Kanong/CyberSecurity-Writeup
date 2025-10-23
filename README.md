@@ -39,7 +39,7 @@ I use this repository as both a personal documentation space and a demonstration
 
 | Category | Description |
 |-----------|-------------|
-| [1. Information Gathering](./1.%20Information_Gathering) | Using tools like Shodan, Recon-ng, and Google Dorking |
+| [1. Information Gathering](https://github.com/Nin-Kanong/pentest-writeups/tree/main/1.%20Information_Gathering) | Using tools like Shodan, Recon-ng, and Google Dorking |
 | [2. Scanning Network](./2.%20Scanning_Network) | Nmap, Netcat, and network fingerprinting |
 | [3. Vulnerability Assessment](./3.%20Vulnerability_Assessment) | Using Nessus, OpenVAS, and Metasploit scanning modules |
 | [4. Gaining Access](./4.%20Gaining_Access) | Exploiting DVWA & Metasploit labs |
