@@ -162,7 +162,7 @@ To become a **Professional Ethical Hacker / Penetration Tester**, contributing t
 ## 🤝 Connect With Me
 
 <p align="center">
-  📧 <a href="ninkanong200620@gmail.com">Gmail</a><br>
+  📧 <a href="https://mail.google.com/mail/u/0/#inbox">Gmail</a><br>
   💼 <a href="https://www.linkedin.com/in/nin-kanong/">LinkedIn</a> &nbsp;|&nbsp; 🧩 <a href="https://github.com/Nin-Kanong/pentest-writeups">GitHub</a>
 </p>
 
