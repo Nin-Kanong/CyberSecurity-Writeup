@@ -1,4 +1,3 @@
-
 <h1 align="center">👋 Hi, I'm <span style="color:#00b0ff;">NIN KANONG (K4N0NG)</span></h1>
 
 <p align="center">
@@ -163,11 +162,9 @@ To become a **Professional Ethical Hacker / Penetration Tester**, contributing t
 
 ## 🤝 Connect With Me
 
-<p align="center">
-  💼 <a href="https://www.linkedin.com/in/nin-kanong/">LinkedIn</a> &nbsp;|&nbsp; 🧩 <a href="https://github.com/Nin-Kanong/pentest-writeups">GitHub</a>
-</p>
-
+- Linkin: https://www.linkedin.com/in/nin-kanong/
 - Gmail: ninkanong200620@gmail.com
+- Github: https://github.com/Nin-Kanong/pentest-writeups
 ---
 
 <p align="center"><b>💬 “Security is not a product, but a process.” — Bruce Schneier</b></p>
