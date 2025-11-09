@@ -38,9 +38,9 @@ Hydra works by:
 ##  Installation & Setup
 
 ### Installation in Linux
-```
+````
 sudo apt install hydra
-```
+````
 
 
 - Or Compile from Source
@@ -51,7 +51,6 @@ cd thc-hydra
 make
 sudo make install
 ````
-
 
 
 
