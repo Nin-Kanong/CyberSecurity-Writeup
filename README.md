@@ -5,6 +5,12 @@
 📍 Norton University | Passionate about Networking, Penetration Testing, and System Security | 🧩 Building my cybersecurity portfolio step by step
 </p>
 
+
+<p align="center">
+Looking for Internship / Junior role in Cybersecurity
+</p>
+
+
 ---
 <!-- Professional Cybersecurity Portfolio by NIN KANONG (K4N0NG) -->
 
