@@ -13,7 +13,7 @@ To solve this lab, perform a cross-site scripting attack that breaks out of the 
 
 
 # Start Lab:
-<img width="819" height="597" alt="image" src="https://github.com/user-attachments/assets/b362ce82-4ec0-4937-9909-698852c411b2" />
+<img width="1050" height="600" alt="image" src="https://github.com/user-attachments/assets/b362ce82-4ec0-4937-9909-698852c411b2" />
 
 <img width="1031" height="899" alt="image" src="https://github.com/user-attachments/assets/eb91da7b-6e4c-4e39-b914-a2d590678cbb" />
 
