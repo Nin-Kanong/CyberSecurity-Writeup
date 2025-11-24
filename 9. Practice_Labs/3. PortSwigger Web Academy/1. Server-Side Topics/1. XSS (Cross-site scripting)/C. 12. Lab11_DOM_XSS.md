@@ -37,5 +37,49 @@ test123
 - After i want to see source code -> `Right-click` -> `View Page`:
 <img width="742" height="622" alt="image" src="https://github.com/user-attachments/assets/6021f935-fd8b-4376-8ac9-bc34b3e3df22" />
 
+- But i see only this:
+<img width="1788" height="680" alt="image" src="https://github.com/user-attachments/assets/2d88097a-c5ec-41be-8e04-844a9b2472f6" />
+
+
+- If i search for this:
+````
+{11 + 22}
+````
+<img width="934" height="403" alt="image" src="https://github.com/user-attachments/assets/68a76663-ae1a-4207-b21b-31754bdf16dd" />
+
+````
+{{22 + 22}}
+````
+<img width="925" height="399" alt="image" src="https://github.com/user-attachments/assets/e4a8eca3-3570-43b7-8614-f7eb914f54d7" />
+
+
+
+````
+alert()
+````
+<img width="960" height="436" alt="image" src="https://github.com/user-attachments/assets/929664be-1ee2-412c-b4c0-d360e588b660" />
+
+<img width="1851" height="572" alt="image" src="https://github.com/user-attachments/assets/8f9fe81c-ed71-43ee-92fd-be67871a6ff7" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
