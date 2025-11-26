@@ -98,51 +98,84 @@ These are core AngularJS services and properties:
 
 - The Exploit Payload:
 ````
-{{$watch.construct('alert()')()}}
+{{$watch.constructor('alert(1)')()}}
+````
+<img width="900" height="408" alt="image" src="https://github.com/user-attachments/assets/b1910b45-5dc5-4315-9bcf-dff250ca2771" />
+
+<img width="927" height="479" alt="image" src="https://github.com/user-attachments/assets/43299c65-d730-4f0b-ac1e-2ad7fb15a587" />
+
+<img width="918" height="404" alt="image" src="https://github.com/user-attachments/assets/9eac890e-24fd-4aad-bb63-8cdb0693b2dc" />
+
+<img width="1849" height="674" alt="image" src="https://github.com/user-attachments/assets/f1782b94-3fa4-4e82-8224-c714f440b48b" />
+
+- Now we got successful to input payload.
+
+
+**is a clever and dangerous AngularJS-specific XSS (Cross-Site Scripting) payload that exploits AngularJS’s expression sandbox to execute arbitrary JavaScript — even when traditional <script> or event-handler injections are blocked.**
+
+
+
+### Context: AngularJS Expressions (Not Regular HTML/JS)
+- In AngularJS, you can embed expressions directly in HTML using double curly braces:
+````
+{{ 2 + 2 }}
+{{ user.name }}
+````
+- These expressions are evaluated in a restricted sandbox — but not secure. Attackers found ways to break out of this sandbox, especially in older versions (AngularJS ≤ 1.6).
+
+**⚠️ This only works if the app uses AngularJS and reflects user input inside {{ }}.**
+
+
+#### Breakig down the payload:
+- `$watch`:
+  - In AngularJS, `$watch` is a function available in the scope during expression evaluation.
+  - Every function in JavaScript has a property called `.constructor`.
+````
+function f() {}
+console.log(f.constructor === Function); // true
 ````
 
-
-
-
-
-- Break down:
+- `$watch.constructor`:
+  - This is equivalent to the `Function` constructor:
 ````
-{{ ... }} 
+$watch.constructor === Function
 ````
-- This is AngularJS interpolation syntax. Anything inside {{ }} gets evaluated as an
 
-
-
-- Expression:
+- `$watch.constructor('alert(1)')`:
+  - This creates a new function from a string:
 ````
-$watch.construct('alert()')()
+var fn = Function('alert(1)'); 
+// same as: function() { alert(1); }
 ````
-- This tries to:
-  - Access the $watch service (which is available in scope)
-  - Call .construct() — but this is NOT a real method in AngularJS! → So this will throw an error unless someone has extended $watch or it’s a trick.
+
+- `$watch.constructor('alert(1)')()`:
+  - The trailing `()` executes the newly created function.
+  - `alert(1)` runs in the global context.
+
+
+- Wrapping in `{{ ... }}`:
+  - AngularJS evaluates the entire expression inside `{{ }}`.
+  - So: `{{ $watch.constructor('alert(1)')() }}` → runs `alert(1)`.
 
 
 
-- Actually, the real exploit in AngularJS template injection usually looks like this:
-````
-{{constructor.constructor('alert(1)')()}}
-````
-Or
-````
-{{'a'.constructor.prototype.charAt=[].join;$eval('x=1')+$error}}
-````
-- But here, they’re trying to use `$watch.construct(...)` — which doesn’t exist.
+- Why this bypasses Filters:
+  - No `<script>` tags
+  - No HTML event handlers (`onerror`, `onload`, etc.)
+  - Looks like a "harmless" Angular expression
+  - Works even if input is reflected only inside `{{ }}`.
+
+
+----
+
+
+<h2 align="center"> Finished Lab 11 DOM XSS in AngularJS </h2>
 
 
 
+<h2 align="center"> Athored: Nin Kanong (k4n0ng) </h2>
 
-
-
-
-
-
-
-
+<h3 align="center"> Date: 26/11/2025 </h3>
 
 
 
