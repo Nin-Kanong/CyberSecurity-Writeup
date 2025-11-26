@@ -63,6 +63,75 @@ alert()
 
 
 
+### MVC Framework Reminder
+  - MVC - FRAMEWORK
+  - M - Model
+  - V - View
+  - C - Controller
+
+- Just a reminder of what MVC means in web frameworks like AngularJS.
+
+
+
+- Constructor & AngularJS Services
+````
+CONSTRUCTOR:
+$scope
+$watch
+$on
+$eval
+$emit
+$apply
+$digest
+````
+- See more angularJS:
+
+
+These are core AngularJS services and properties:
+- `$scope`: The data model object passed to views.
+- `$watch`: Watches for changes in scope variables.
+- `$eval`: Evaluates an expression in the current scope.
+- `$apply`: Triggers digest cycle manually.
+- `$digest`: Processes watchers (usually called internally).
+- `$on`, `$emit`: For event handling.
+
+
+- The Exploit Payload:
+````
+{{$watch.construct('alert()')()}}
+````
+
+
+
+
+
+- Break down:
+````
+{{ ... }} 
+````
+- This is AngularJS interpolation syntax. Anything inside {{ }} gets evaluated as an
+
+
+
+- Expression:
+````
+$watch.construct('alert()')()
+````
+- This tries to:
+  - Access the $watch service (which is available in scope)
+  - Call .construct() — but this is NOT a real method in AngularJS! → So this will throw an error unless someone has extended $watch or it’s a trick.
+
+
+
+- Actually, the real exploit in AngularJS template injection usually looks like this:
+````
+{{constructor.constructor('alert(1)')()}}
+````
+Or
+````
+{{'a'.constructor.prototype.charAt=[].join;$eval('x=1')+$error}}
+````
+- But here, they’re trying to use `$watch.construct(...)` — which doesn’t exist.
 
 
 
