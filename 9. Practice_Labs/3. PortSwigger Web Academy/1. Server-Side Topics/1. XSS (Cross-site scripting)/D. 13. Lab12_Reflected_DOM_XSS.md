@@ -47,7 +47,107 @@
 <img width="1106" height="1079" alt="image" src="https://github.com/user-attachments/assets/d9d914f1-ba09-42b6-9063-ad75efe9bc59" />
 
 
-- In this we vulnerable code:
+
+---
+### In this we see vulnerable code:
+
+1.  Use of `eval()` with Server Response (Critical Vulnerability):
+````
+eval('var searchResultsObj = ' + this.responseText);
+````
+- In this if i go to browser and type this:
+<img width="1428" height="866" alt="image" src="https://github.com/user-attachments/assets/adeb27e5-57ed-413c-9533-4fba8213bc8b" />
+
+They recommand that we shouldn't use `eval()`.
+
+- Why it dangerous:
+`eval()` executes arbitrary JavaScript code. If the server response (`this.responseText`) is not strictly controlled or can be manipulated by an attacker, this leads to client-side Remote Code Execution (RCE) or Stored/Reflected XSS.
+
+- Attack Scenario:
+IF an attacker can:
+  -  Poison the response from the endpoint used in `xhr.open("GET", path + window.location.search)`, or
+  -  Trick the user into visiting a malicious URL that causes the app to fetch attacker-controlled JSON (e.g., via DNS rebinding, SSRF, or if the `path` is user-controllable),
+  - They can use inject javascript like:
+````
+{"searchTerm":"test"}; alert(document.cookie); //
+````
+  - When passed to eval(), it becomes:
+````
+var searchResultsObj = {"searchTerm":"test"}; alert(document.cookie); //
+````
+Arbitrary code execution in the victim's browser.
+
+
+- Fix:
+Replace `eval()` with `JSON.parse()`:
+````
+var searchResultsObj = JSON.parse(this.responseText);
+````
+
+2. DOM-based XSS in dynamic content insertion
+Even after fixing `eval()`, the code inserts user-controlled data into the DOM using `.innerText` and `.innerHTML`.
+
+- While .innerText is generally safe (it doesn’t parse HTML), note this line:
+````
+blogList.innerHTML += "<br/>";
+````
+  - Although `<br/>` is static, if any part of the loop used `.innerHTML` with attacker-controlled content (e.g., `searchResult.title` or `summary`), it would be vulnerable.
+  - In your code, you use `.innerText` for `title` and `summary`, which mitigates XSS there — good.
+But caution: if the server returns malicious strings that are later inserted via `.innerHTML` elsewhere (or if this code evolves), it becomes risky.
+
+
+
+3. Open redirection / SSRF risk (indirect)
+- The path parameter is passed into the XHR URL:
+````
+xhr.open("GET", path + window.location.search);
+````
+- If path is derived from user input (e.g., URL parameters, DOM), an attacker might control the fetch destination.
+- This could lead to:
+  - Server-Side Request Forgery (SSRF) if the backend proxies this request,
+  - Leakage of local files if the client can be tricked into fetching file:// URLs (unlikely in modern browsers),
+  - Or bypassing CORS in edge cases.
+
+---
+
+
+- After go back to our `Burp`:
+<img width="1919" height="846" alt="image" src="https://github.com/user-attachments/assets/92a318c6-8e9a-4b40-bfe3-c37e4175fedf" />
+
+- `Right-Click` on it and after select `Send to Repeater`:
+<img width="1491" height="1043" alt="image" src="https://github.com/user-attachments/assets/09101950-56de-4fa7-82b1-f0de65a2e1b3" />
+
+- After go to `Repeater`: 
+<img width="1493" height="632" alt="image" src="https://github.com/user-attachments/assets/1dcf3bd2-ced2-497b-abd7-9ccc0bd0759b" />
+
+- After click on `Send` -> after we will see the `Response`:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
