@@ -1,6 +1,6 @@
 <h1 align="center"> Lab: Reflected DOM XSS </h1>
 
-<img width="811" height="471" alt="image" src="https://github.com/user-attachments/assets/52c554b6-032d-4f94-9960-c4ea1cb8c2e5" />
+<img width="1000" height="600" alt="image" src="https://github.com/user-attachments/assets/52c554b6-032d-4f94-9960-c4ea1cb8c2e5" />
 
 
 ## Requirements:
