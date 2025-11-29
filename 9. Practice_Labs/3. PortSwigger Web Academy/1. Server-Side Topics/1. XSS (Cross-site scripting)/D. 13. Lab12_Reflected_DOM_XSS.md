@@ -121,52 +121,69 @@ xhr.open("GET", path + window.location.search);
 <img width="1493" height="632" alt="image" src="https://github.com/user-attachments/assets/1dcf3bd2-ced2-497b-abd7-9ccc0bd0759b" />
 
 - After click on `Send` -> after we will see the `Response`:
+<img width="1493" height="677" alt="image" src="https://github.com/user-attachments/assets/fa2ba2c6-18b6-467c-a4b0-595a89e5136f" />
+
+- After i change the search from `test123` -> `test123"`:
+<img width="1490" height="602" alt="image" src="https://github.com/user-attachments/assets/600ed66a-eef6-49e0-9351-3fa2828f9a1b" />
+
+- Now we see this, and in this it so interest `\`:
+<img width="1488" height="437" alt="image" src="https://github.com/user-attachments/assets/89a4ce65-1b29-4193-8a9b-664bd9411850" />
+
+
+- Or if i want to see `searcresult.js` file, in this i back to `Target`:
+<img width="1920" height="748" alt="image" src="https://github.com/user-attachments/assets/45166f29-019f-4984-8f66-10de0a7c9f24" />
+
+- After i click on it:
+<img width="1918" height="965" alt="image" src="https://github.com/user-attachments/assets/b6b80a40-98dc-417c-85fb-09ab07607fc8" />
+
+- In this if i find eval `eval`:
+<img width="1528" height="722" alt="image" src="https://github.com/user-attachments/assets/3abbab65-8129-41db-940b-293abcdc38b0" />
+
+- **This allows arbitrary JavaScript execution if an attacker can control the response from the endpoint called via xhr.open("GET", path + window.location.search).**
+
+#### Understand the Expected Response
+- The code expects JSON like:
+````
+{"searchTerm":"test","results":[]}
+````
+- But `eval()` executes any valid JavaScript, not just JSON.
+
+- So if the server returns:
+````
+{"searchTerm":"x"}; alert(1); //
+````
+- It becomes:
+````
+var searchResultsObj = {"searchTerm":"x"}; alert(1); //
+````
+`alert(1)` executes!
 
 
 
+- After in this i can try to exploit it:
+````
+\"-alert(1)}//
+````
+<img width="917" height="390" alt="image" src="https://github.com/user-attachments/assets/06b5489e-ea5b-4950-8970-e604668e616b" />
+
+<img width="990" height="419" alt="image" src="https://github.com/user-attachments/assets/4cb09f9e-3dc1-4e1b-8b83-a1dcba8ab11c" />
+
+- Now we got success to inject payload.
+
+- If i want another payload:
+````
+test123\"&alert()}//
+````
+<img width="926" height="368" alt="image" src="https://github.com/user-attachments/assets/c7100c36-3041-4f9a-90c7-d4904cfcfc0a" />
+
+<img width="920" height="432" alt="image" src="https://github.com/user-attachments/assets/679a5c6a-c7e4-4cf3-bfd2-2d533669f29c" />
+
+- Now i got success.
 
 
+----
+
+<h2 align="center"> Finished Lab 12 Reflected DOM XSS  </h2>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<h2 align="center"> Author: Nin Kanong (k4n0ng) </h2>
