@@ -80,15 +80,35 @@ To solve the lab, perform a cross-site scripting attack that bypasses the WAF an
 - And if I change this to `<h1>`:
 <img width="1493" height="551" alt="image" src="https://github.com/user-attachments/assets/76c39838-5789-4c78-b838-3c2d40da8f92" />
 
+<img width="1882" height="577" alt="image" src="https://github.com/user-attachments/assets/8541606c-0969-4eed-ac9d-3185a41d9c48" />
 
+- After `Right-Click` -> `Send to Intruder`:
+<img width="938" height="918" alt="image" src="https://github.com/user-attachments/assets/22139d94-e820-40fc-a054-9b77836c3129" />
 
+<img width="1870" height="824" alt="image" src="https://github.com/user-attachments/assets/5275d082-1d11-4369-914a-f0519283daaa" />
 
+- After select on `<h1>` -> `add`:
+<img width="1217" height="658" alt="image" src="https://github.com/user-attachments/assets/0aab2688-c9e0-495a-813c-c0c002d7bf19" />
 
+- We will see this:
+<img width="1917" height="938" alt="image" src="https://github.com/user-attachments/assets/ceb93582-1917-4be2-8a69-b36b88a7668a" />
 
+- After go back to our `Cheat Sheet`: https://portswigger.net/web-security/cross-site-scripting/cheat-sheet
+- click on `Copy tags to clipboard`:
+<img width="985" height="671" alt="image" src="https://github.com/user-attachments/assets/72a50027-4caa-4d49-acda-3aa88b6ed0a5" />
 
+- And then o back to our `Burp` -> click on `Past`: 
+<img width="1918" height="943" alt="image" src="https://github.com/user-attachments/assets/d8a497dd-52d4-4421-914c-ba9d81418b10" />
 
+- Now in payload we see:
+<img width="787" height="937" alt="image" src="https://github.com/user-attachments/assets/a217bd75-7b5a-4e19-b08b-c6fc34b6f9b1" />
 
+- Afte click on `Start Attack`:
+<img width="1882" height="617" alt="image" src="https://github.com/user-attachments/assets/d2659998-93d8-468b-93b4-4308dd2ce515" />
 
+<img width="1850" height="796" alt="image" src="https://github.com/user-attachments/assets/ef71a8a1-d173-4c00-b91d-79b4c41c543a" />
+
+- After find what payload are diferent:
 
 
 
