@@ -87,28 +87,123 @@ To solve the lab, perform a cross-site scripting attack that bypasses the WAF an
 
 <img width="1870" height="824" alt="image" src="https://github.com/user-attachments/assets/5275d082-1d11-4369-914a-f0519283daaa" />
 
-- After select on `<h1>` -> `add`:
-<img width="1217" height="658" alt="image" src="https://github.com/user-attachments/assets/0aab2688-c9e0-495a-813c-c0c002d7bf19" />
+- After select on only `h1`, or select on only word in the middle -> after click `add`:
+<img width="1138" height="538" alt="image" src="https://github.com/user-attachments/assets/232d7a36-541a-48f7-aaa0-e2ab7a6333e0" />
 
-- We will see this:
-<img width="1917" height="938" alt="image" src="https://github.com/user-attachments/assets/ceb93582-1917-4be2-8a69-b36b88a7668a" />
+- Now we see this after go to `Payload`:
+<img width="1919" height="879" alt="image" src="https://github.com/user-attachments/assets/648dc89f-3bf5-4839-a170-7fb94e899766" />
 
-- After go back to our `Cheat Sheet`: https://portswigger.net/web-security/cross-site-scripting/cheat-sheet
-- click on `Copy tags to clipboard`:
-<img width="985" height="671" alt="image" src="https://github.com/user-attachments/assets/72a50027-4caa-4d49-acda-3aa88b6ed0a5" />
+- And then go to burp suite `Cheat sheet`: https://portswigger.net/web-security/cross-site-scripting/cheat-sheet
+- After click copy on `Copy tags to chipboard`:
+<img width="977" height="677" alt="image" src="https://github.com/user-attachments/assets/1336196c-4b56-4eb4-ad60-197340b4691f" />
 
-- And then o back to our `Burp` -> click on `Past`: 
-<img width="1918" height="943" alt="image" src="https://github.com/user-attachments/assets/d8a497dd-52d4-4421-914c-ba9d81418b10" />
 
-- Now in payload we see:
-<img width="787" height="937" alt="image" src="https://github.com/user-attachments/assets/a217bd75-7b5a-4e19-b08b-c6fc34b6f9b1" />
+- After this go back to our `Burp Suite` -And past our **Payload**:
+<img width="783" height="932" alt="image" src="https://github.com/user-attachments/assets/208e3361-48bd-4bf7-947f-f3a7a50794ac" />
 
-- Afte click on `Start Attack`:
-<img width="1882" height="617" alt="image" src="https://github.com/user-attachments/assets/d2659998-93d8-468b-93b4-4308dd2ce515" />
+- After we start attack -> click on `Start Attack`:
+<img width="1916" height="870" alt="image" src="https://github.com/user-attachments/assets/40e6f141-184b-4d6b-9620-2613ffd4de58" />
 
-<img width="1850" height="796" alt="image" src="https://github.com/user-attachments/assets/ef71a8a1-d173-4c00-b91d-79b4c41c543a" />
+- Now it start Attack:
+<img width="1863" height="878" alt="image" src="https://github.com/user-attachments/assets/3dae7c1b-eb67-4140-aa4f-2c7716ab62a1" />
 
-- After find what payload are diferent:
+<img width="1788" height="520" alt="image" src="https://github.com/user-attachments/assets/6376435d-0737-4497-89ab-f578cc6d46f1" />
+
+<img width="1782" height="525" alt="image" src="https://github.com/user-attachments/assets/b340f37b-5733-45a9-877b-07eb1f97649f" />
+
+- **Note**: In this we want to stop or puase it on what when we find:
+<img width="1864" height="1069" alt="image" src="https://github.com/user-attachments/assets/d4e5f608-95d4-4281-ab4f-6f0622282cee" />
+
+- In this if i click on others that have `Status code` 400:
+<img width="1862" height="861" alt="image" src="https://github.com/user-attachments/assets/95fb8966-6426-4759-afc9-de780bbc52ea" />
+
+- After go to `Response` -> we will see `Tag is not allowed`:
+<img width="1825" height="637" alt="image" src="https://github.com/user-attachments/assets/1b9927c1-3f9c-4ef0-9f6e-ed663a582ceb" />
+
+- IF i click on `Status code` 200:
+<img width="1831" height="865" alt="image" src="https://github.com/user-attachments/assets/ef985fc6-8737-4940-ab76-28a3735d545f" />
+
+- Now we see text that allowed `body` and `custom tags`:
+
+- After go to to our Browser -> after type this:
+````
+<body onerror=alert()>
+````
+<img width="808" height="710" alt="image" src="https://github.com/user-attachments/assets/74da6525-35e8-48c0-8b6b-f4b13c42cfe0" />
+
+- After we see `"Attribute is not allowed"`:
+<img width="1163" height="278" alt="image" src="https://github.com/user-attachments/assets/0c369e43-39a6-4939-a90b-118c02dba73c" />
+
+- After go back to our `Burp`:
+<img width="1492" height="673" alt="image" src="https://github.com/user-attachments/assets/2f4081fd-827b-43f5-ad21-92a66c4c582b" />
+
+- After change `h1` to our text that we found `body`:
+<img width="1488" height="607" alt="image" src="https://github.com/user-attachments/assets/692369f3-61bc-4b22-b3e9-27fd68ab5c08" />
+
+- And then we see `HTTP/2 200`:
+<img width="1487" height="802" alt="image" src="https://github.com/user-attachments/assets/e9039e4a-7c04-4f5a-91e8-770717bdc553" />
+
+- If i add more like payload above:
+````
+<body onerror=alert()>
+````
+<img width="1491" height="541" alt="image" src="https://github.com/user-attachments/assets/b8bd2440-ac8a-4fd2-b7c1-f5fa2393ffdc" />
+
+- Now we see like in browser above.
+
+- After `Right-Click` -> select on `Send to Intruder` -> After go to `Intruder`:
+<img width="1493" height="1043" alt="image" src="https://github.com/user-attachments/assets/79c6ec4b-a774-4283-8ad8-debc0acaccbe" />
+
+- After we see this:
+<img width="1918" height="822" alt="image" src="https://github.com/user-attachments/assets/5197eb8d-12e5-4083-8cdd-d64503052b77" />
+
+- After select on `onerror` -> click `add`:
+<img width="1136" height="472" alt="image" src="https://github.com/user-attachments/assets/08e62d4e-2ee6-4949-946f-0b4a1e1d08a9" />
+
+<img width="1918" height="938" alt="image" src="https://github.com/user-attachments/assets/7cd713de-1fef-444e-a950-80bad053cd71" />
+
+- After go to burp XSS `Cheat Sheet`: https://portswigger.net/web-security/cross-site-scripting/cheat-sheet
+- After click on `Copy event to clipboard`:
+<img width="982" height="687" alt="image" src="https://github.com/user-attachments/assets/413188ab-c8d6-44d9-8e33-4c48e0d1d8b9" />
+
+- After go back to our `Burp` -> And past it to our payload, click on `Past` -> After we can start attack, click on `Start Attack`:
+<img width="1916" height="878" alt="image" src="https://github.com/user-attachments/assets/43c550c6-5152-4857-9078-66650fa09dec" />
+
+- Now it will start attack:
+<img width="1820" height="716" alt="image" src="https://github.com/user-attachments/assets/ac648cac-ff0a-430d-8258-9526e406ec1c" />
+
+- After click on `Status code`:
+<img width="1822" height="500" alt="image" src="https://github.com/user-attachments/assets/e15f30cd-45b1-40a9-a777-b5f8da0bbab7" />
+
+- Now we found the text that allowed and have `Status code` 200:
+<img width="1826" height="567" alt="image" src="https://github.com/user-attachments/assets/3d9f05b3-f2cb-4e01-8dcc-df3489461a1d" />
+
+- Now we see the status code HTTP/2 200:
+<img width="1817" height="866" alt="image" src="https://github.com/user-attachments/assets/fc926ad8-51cb-49ea-ae95-cbc48e4b6782" />
+
+- Now we found a lots text that allowed.
+
+- In this we can `Exit` this -> just click on `Discute`:
+<img width="1863" height="1071" alt="image" src="https://github.com/user-attachments/assets/bfdb23c3-e6c4-4c56-aab6-fa2405ee1154" />
+
+
+- After this go back to our `Burp Suite` -> go to `Repeater`:
+<img width="1490" height="508" alt="image" src="https://github.com/user-attachments/assets/43dd89c5-cea1-4c6f-9048-82fd4353fd18" />
+
+- After change in `onerror` to our text that we found, and also in this i change it to ``:
+<img width="1495" height="855" alt="image" src="https://github.com/user-attachments/assets/4921f38e-3adc-4e06-b0ff-74fafc52db29" />
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
