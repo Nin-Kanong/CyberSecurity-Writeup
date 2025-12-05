@@ -1,6 +1,6 @@
 <h1 align="center"> Lab: Reflected XSS into HTML context with all tags blocked except custom ones </h1>
 
-<img width="785" height="455" alt="image" src="https://github.com/user-attachments/assets/ddd841c5-6eca-4de5-b10c-1ec1a4445fae" />
+<img width="1000" height="500" alt="image" src="https://github.com/user-attachments/assets/ddd841c5-6eca-4de5-b10c-1ec1a4445fae" />
 
 
 ## Lab URL: https://portswigger.net/web-security/cross-site-scripting/contexts/lab-html-context-with-all-standard-tags-blocked
