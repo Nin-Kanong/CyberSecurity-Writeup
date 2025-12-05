@@ -253,19 +253,31 @@ This is an inline JavaScript event handler attached to an HTML element (in your 
 <img width="968" height="828" alt="image" src="https://github.com/user-attachments/assets/b5fbd027-b09f-4da3-b96b-dbcba8178f88" />
 
 
+- After we click on `Store` -> and then click on `Delivery exploit to victim`:
+<img width="997" height="827" alt="image" src="https://github.com/user-attachments/assets/6b3d7c09-3c52-4f04-891d-5b9aff18037b" />
+
+- Now we got successful to solve this lab:
+<img width="1847" height="893" alt="image" src="https://github.com/user-attachments/assets/7a390d20-2d7c-42e5-9fee-ca0bf0e0412d" />
+
+- After click on`View exploit`:
+<img width="970" height="817" alt="image" src="https://github.com/user-attachments/assets/22b3702b-7d11-42fc-a0fd-3ee162522a33" />
+
+- Now we see:
+<img width="1674" height="877" alt="image" src="https://github.com/user-attachments/assets/9744ee27-f50a-4ccd-ac66-319ac6b91318" />
+
+
+<img width="1247" height="295" alt="image" src="https://github.com/user-attachments/assets/a9caf28c-d449-4e83-8eb0-b1fdac66ab10" />
+
+- We got successful to solve this Lab.
+
+
+----
 
 
 
+<h2 align="center"> Finished Lab14: Reflected XSS into HTML context with most tags and attributes blocked </h2>
+
+<h2 align="center"> Author: Nin Kanong (k4n0ng) </h2>
 
 
-
-
-
-
-
-
-
-
-
-
-
+<h3 align="center"> Date: 5/12/2025 </h3>
