@@ -1,4 +1,4 @@
-<img width="1140" height="488" alt="image" src="https://github.com/user-attachments/assets/c4384246-6863-4696-90ea-b7f5da641739" /><h1 align="center"> Lab: Reflected XSS with some SVG markup allowed </h1>
+<h1 align="center"> Lab: Reflected XSS with some SVG markup allowed </h1>
 
 <img width="1307" height="756" alt="image" src="https://github.com/user-attachments/assets/a062e9de-d808-4b5f-8e9d-835f4cb4e2ba" />
 
