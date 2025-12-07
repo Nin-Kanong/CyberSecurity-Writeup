@@ -127,29 +127,140 @@ onbegin
 
 
 
+- After go back to our target browser, after type this:
+````
+<svg>
+````
+<img width="934" height="432" alt="image" src="https://github.com/user-attachments/assets/7a3e6748-871c-45a5-97da-f1e96eb20333" />
+
+<img width="952" height="370" alt="image" src="https://github.com/user-attachments/assets/801f621f-3a8b-41d1-a7f1-61e066826365" />
+
+- Now we see no messages alert -> `Right-Click` -> `Inspect`:
+<img width="1918" height="966" alt="image" src="https://github.com/user-attachments/assets/c409317a-a94f-4135-96f9-b839bbadd635" />
+
+- Now we see message that i input.
+
+- After i try one more:
+````
+"><svg>
+````
+<img width="1918" height="960" alt="image" src="https://github.com/user-attachments/assets/fb530971-102e-42f2-b999-d03686cb1e26" />
+
+
+- Now i try one more thing:
+````
+<svg onclick=alert()>
+````
+<img width="906" height="310" alt="image" src="https://github.com/user-attachments/assets/e9eb32a3-716a-4908-863f-92a02a5c7c23" />
+
+- Now we see `Event is not allowed`:
+<img width="1141" height="211" alt="image" src="https://github.com/user-attachments/assets/9ca56709-819d-4074-a5e8-dac7b4fada1a" />
+
+- If i try others:
+````
+<svg onmouseover=alert()>
+````
+<img width="954" height="380" alt="image" src="https://github.com/user-attachments/assets/c625699b-9a38-4d92-aecc-146630430f5e" />
+
+- But i still see this:
+<img width="1196" height="210" alt="image" src="https://github.com/user-attachments/assets/8df0df41-e73a-4b61-9580-da97da9eadbb" />
+
+
+-  After go back to our `Burp Suite`:
+<img width="1919" height="929" alt="image" src="https://github.com/user-attachments/assets/1840ad82-a8e7-4096-8646-51d34421df5d" />
+
+- After send it to reapeater -> `Right-Click` -> `Send to repeater`:
+<img width="1494" height="958" alt="image" src="https://github.com/user-attachments/assets/85808a68-f66b-4d27-a4f6-6cccd994d237" />
+
+<img width="1492" height="712" alt="image" src="https://github.com/user-attachments/assets/ea7b6bdf-f16d-4832-a979-7af6fbaa4d16" />
+
+- After `Right-Click` -> `Send to Intruder`:
+<img width="1492" height="1040" alt="image" src="https://github.com/user-attachments/assets/aa955222-0a8a-44a1-8e56-7ec4364c8ee8" />
+
+<img width="1328" height="653" alt="image" src="https://github.com/user-attachments/assets/edf3b8f3-4960-4530-9082-99034dff6cc8" />
+
+- After I chenge `%3Csvg+onmouseover%3Dalert%28%29%3E` -> `<svg+onload=alert()>` after select on `onload` -> click on `add`:
+<img width="1353" height="427" alt="image" src="https://github.com/user-attachments/assets/92ab1bfd-c8e1-445c-8296-1c25e332119d" />
+
+<img width="1343" height="435" alt="image" src="https://github.com/user-attachments/assets/33da8166-d047-459d-9223-a07b1d51d69e" />
+
+- After go to payload:
+<img width="1922" height="881" alt="image" src="https://github.com/user-attachments/assets/62ed213a-332c-49fc-9e77-29f2ff858046" />
+
+- After go back to our `Cheat sheet`: https://portswigger.net/web-security/cross-site-scripting/cheat-sheet
+- After go to `Burp cheat sheet` -> clicl on `Copy events to clipboard`:
+<img width="982" height="673" alt="image" src="https://github.com/user-attachments/assets/1cfe8112-e611-4b3f-9078-d4419b2e9874" />
+
+
+- Afte go back to our `Burp Suite`:
+<img width="1918" height="871" alt="image" src="https://github.com/user-attachments/assets/0617e0e0-4ba1-4d42-bc8e-f622f286c339" />
+
+- After click on `Start Attack`:
+<img width="1863" height="826" alt="image" src="https://github.com/user-attachments/assets/6b6a8cd1-d618-46b9-9b01-075fb758fd55" />
+
+- Now we found the correct `Payload`: `onbegin`
+<img width="1827" height="831" alt="image" src="https://github.com/user-attachments/assets/e588efca-064c-4d7f-9a66-7f336e21abc3" />
+
+<img width="1827" height="866" alt="image" src="https://github.com/user-attachments/assets/94307d14-d28a-4850-b57e-52e8a8f38271" />
+
+
+- After go back to our target browser -> type this:
+````
+<svg onbegin=alert()>
+````
+<img width="900" height="362" alt="image" src="https://github.com/user-attachments/assets/9dc901ea-92b9-4a3e-85a7-53624420a623" />
+
+- But we see nothing:
+<img width="1012" height="432" alt="image" src="https://github.com/user-attachments/assets/7cb59943-4e87-4154-9f95-15f49b426450" />
+
+- After if we want to detail about `SVG Vulnerable code`:
+- Go to browser: `svg html tag`: https://www.w3schools.com/html/html5_svg.asp
+<img width="985" height="923" alt="image" src="https://github.com/user-attachments/assets/1c4f32fa-dc51-4d64-977f-f937bbd35083" />
+
+<img width="1202" height="650" alt="image" src="https://github.com/user-attachments/assets/b152bdbb-3127-4508-88be-c42e4ee2cd2c" />
+
+<img width="1088" height="424" alt="image" src="https://github.com/user-attachments/assets/c1a26aa5-7acd-474d-9d81-dfd7fce4bc85" />
+
+- Now we can see The risk comes when you combine **allowed tags + allowed** events that execute JavaScript:
+````
+<svg>
+  <animatetransform onbegin=alert(1) />
+</svg>
+````
+- `<animatetransform>` is an SVG animation element.
+- The `onbegin` event fires immediately when the animation starts (which happens as soon as the browser parses the SVG).
+- Since the lab allows this tag + this event, and injects it directly into the DOM, the `alert(1)` executes → XSS!
 
 
 
+- After i check about `animatetransform`: https://www.w3schools.com/graphics/svg_animation.asp
+<img width="1035" height="472" alt="image" src="https://github.com/user-attachments/assets/8d1787c2-5dbd-450e-948d-ad32d6d4ea35" />
 
 
 
+- Now we get all payload and vulnerable code, So we can craft `Payload`:
+````
+<svg><animatetransform onbegin=alert()></svg>
+````
+- After past to our `Payload` to our target:
+<img width="960" height="554" alt="image" src="https://github.com/user-attachments/assets/1c6fe67d-b4f6-481d-9c69-ae33b22161f3" />
+
+- Now we got successful to inject payload:
+<img width="1037" height="571" alt="image" src="https://github.com/user-attachments/assets/2b51e0ec-7c05-454b-a8fa-5fd3c58e8a40" />
+
+<img width="1490" height="632" alt="image" src="https://github.com/user-attachments/assets/a471dc20-3942-4f99-9111-e86ef625bfd2" />
+
+
+- Now we got success to solve this Lab.
+
+
+---
+
+<h2 align="center"> Finished Lab 16: SVG tags and event handlers bypassing tag restrictions </h2>
+
+
+<h2 align="center"> Author: Nin Kanong (k4n0ng) </h2>
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<h3 align="center"> Date: 7/12/2025 </h3>
