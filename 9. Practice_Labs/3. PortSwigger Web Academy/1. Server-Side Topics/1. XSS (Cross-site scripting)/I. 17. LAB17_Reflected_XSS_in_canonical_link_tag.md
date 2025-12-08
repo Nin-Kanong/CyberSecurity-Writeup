@@ -1,6 +1,6 @@
 <h1 align="center"> Lab: Reflected XSS in canonical link tag </h1>
 
-<img width="793" height="665" alt="image" src="https://github.com/user-attachments/assets/d6ebe626-5c29-458f-8293-67cd0bb5fa17" />
+<img width="1000" height="665" alt="image" src="https://github.com/user-attachments/assets/d6ebe626-5c29-458f-8293-67cd0bb5fa17" />
 
 
 ## LAb URL: https://portswigger.net/web-security/cross-site-scripting/contexts/lab-canonical-link-tag
@@ -25,7 +25,7 @@ Alt+X
 
 # Lab Solution:
 
-<img width="793" height="665" alt="image" src="https://github.com/user-attachments/assets/d6ebe626-5c29-458f-8293-67cd0bb5fa17" />
+<img width="1000" height="665" alt="image" src="https://github.com/user-attachments/assets/d6ebe626-5c29-458f-8293-67cd0bb5fa17" />
 
 - Access Lab:
 <img width="1176" height="956" alt="image" src="https://github.com/user-attachments/assets/8389e988-1ce5-492d-af68-f7a46647b75f" />
