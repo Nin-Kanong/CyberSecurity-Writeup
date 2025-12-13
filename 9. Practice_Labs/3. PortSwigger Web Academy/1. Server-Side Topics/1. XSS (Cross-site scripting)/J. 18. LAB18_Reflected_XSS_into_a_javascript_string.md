@@ -104,38 +104,8 @@ var searchTerms = 'abc123'payload';
 ---
 
 
+<h2 align="center"> Finished OF Reflected XSS into a JavaScript string with single quote and backslash escaped  </h1>
 
+<h2 align="center"> Author: Nin KAnong (k4n0ng) </h2>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<h3 align="center"> Date: 13/12/2025 </h3>
