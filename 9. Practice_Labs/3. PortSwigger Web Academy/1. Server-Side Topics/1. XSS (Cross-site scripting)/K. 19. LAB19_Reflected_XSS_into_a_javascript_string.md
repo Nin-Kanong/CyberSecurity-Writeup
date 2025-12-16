@@ -20,7 +20,7 @@ To solve this lab, perform a cross-site scripting attack that breaks out of the 
 <img width="984" height="783" alt="image" src="https://github.com/user-attachments/assets/28bca39b-800e-4dcc-9943-f0104808012d" />
 
 
-## In this frst I test with **Burp Suite**:
+## Used with Burp Suite:
 - Open our `Burp` -> after Open `Burp Browser` -> or we can open this in `FireFox`:
 <img width="1921" height="910" alt="image" src="https://github.com/user-attachments/assets/e606f4bd-e68f-4ba6-b1ce-85489738557d" />
 
@@ -108,24 +108,9 @@ Arbitrary JavaScript execution = Reflected XSS
 
 
 
+<h2 align="center"> Finished of HTML-encoded angle brackets, double quotes, and escaped single quotes </h2>
 
 
+<h2 align="center"> Author: Nin Kanong (k4n0ng) </h2>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<h3 align="center"> Date: 15/12/2025 </h3>
