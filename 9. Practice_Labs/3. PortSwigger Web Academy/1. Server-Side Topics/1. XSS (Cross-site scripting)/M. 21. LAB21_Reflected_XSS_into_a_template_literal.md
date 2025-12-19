@@ -136,6 +136,13 @@ ${alert()}
 ---
 
 
+## Use Burp Suite 
+- first open our `Burp` -> after open `Burp Browser`:
+<img width="1920" height="885" alt="image" src="https://github.com/user-attachments/assets/378944d5-2242-4890-9096-ff63d900ec78" />
+
+
+
+
 
 
 
