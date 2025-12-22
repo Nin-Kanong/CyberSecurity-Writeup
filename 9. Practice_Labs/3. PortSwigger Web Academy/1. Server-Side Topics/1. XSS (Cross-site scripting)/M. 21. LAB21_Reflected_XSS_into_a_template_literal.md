@@ -1,9 +1,9 @@
 <h1 align="center"> Lab: Reflected XSS into a template literal with angle brackets, single, double quotes, backslash and backticks Unicode-escaped </h1>
 
-<img width="761" height="528" alt="image" src="https://github.com/user-attachments/assets/eae3c7e0-47ef-4c02-bc13-c1ae59ceefdf" />
+<img width="1050" height="528" alt="image" src="https://github.com/user-attachments/assets/eae3c7e0-47ef-4c02-bc13-c1ae59ceefdf" />
 
 
-## Lab URL: 
+## Lab URL: https://portswigger.net/web-security/cross-site-scripting/contexts/lab-javascript-template-literal-angle-brackets-single-double-quotes-backslash-backticks-escaped
 
 
 
@@ -13,10 +13,10 @@ This lab contains a reflected cross-site scripting vulnerability in the search b
 
 
 # Start Lab:
-<img width="761" height="528" alt="image" src="https://github.com/user-attachments/assets/eae3c7e0-47ef-4c02-bc13-c1ae59ceefdf" />
+<img width="1050" height="528" alt="image" src="https://github.com/user-attachments/assets/eae3c7e0-47ef-4c02-bc13-c1ae59ceefdf" />
 
 - Access the Lab:
-<img width="756" height="953" alt="image" src="https://github.com/user-attachments/assets/cdd0eb62-6450-495a-9bdb-0416917d5978" />
+<img width="1050" height="953" alt="image" src="https://github.com/user-attachments/assets/cdd0eb62-6450-495a-9bdb-0416917d5978" />
 
 
 ## Use with Inspect
@@ -24,16 +24,16 @@ This lab contains a reflected cross-site scripting vulnerability in the search b
 ````
 <>'''`
 ````
-<img width="740" height="792" alt="image" src="https://github.com/user-attachments/assets/ae2691c4-6d1f-4966-adb0-a90c09c81fc8" />
+<img width="1050" height="792" alt="image" src="https://github.com/user-attachments/assets/ae2691c4-6d1f-4966-adb0-a90c09c81fc8" />
 
 
-<img width="767" height="328" alt="image" src="https://github.com/user-attachments/assets/8269a2c5-2c99-4899-9f85-20351f83a2e5" />
+<img width="1050" height="328" alt="image" src="https://github.com/user-attachments/assets/8269a2c5-2c99-4899-9f85-20351f83a2e5" />
 
 - After `Right-click` -> `Inspect`:
-<img width="723" height="656" alt="image" src="https://github.com/user-attachments/assets/62e35728-e9da-479c-aee4-363246241f3f" />
+<img width="1050" height="656" alt="image" src="https://github.com/user-attachments/assets/62e35728-e9da-479c-aee4-363246241f3f" />
 
 - Now we found what that we was input:
-<img width="1917" height="892" alt="image" src="https://github.com/user-attachments/assets/d085f272-feab-482c-a86e-a3031be64be1" />
+<img width="1050" height="892" alt="image" src="https://github.com/user-attachments/assets/d085f272-feab-482c-a86e-a3031be64be1" />
 
 
 #### Explain about this:
@@ -135,47 +135,10 @@ ${alert()}
 
 ---
 
-
-## Use Burp Suite 
-- first open our `Burp` -> after open `Burp Browser`:
-<img width="1920" height="885" alt="image" src="https://github.com/user-attachments/assets/378944d5-2242-4890-9096-ff63d900ec78" />
+<h2 align="center"> Finished Of Reflected XSS into a template literal </h2>
 
 
+<h2> Credit By: Nin Kanong (k4n0ng) </h2>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<h3 align="center"> Date: 18/12/2025 </h3>
