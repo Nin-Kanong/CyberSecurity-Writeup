@@ -1,8 +1,8 @@
 <h1 align="center">👋 Hi, I'm <span style="color:#00b0ff;">NIN KANONG (K4N0NG)</span></h1>
 
 <p align="center">
-🎓 <b>IT Student | Cybersecurity Enthusiast | Ethical Hacker in Training</b><br>
-📍 Norton University | Passionate about Networking, Penetration Testing, and System Security | 🧩 Building my cybersecurity portfolio step by step
+🎓 <b>IT Student | Cybersecurity Enthusiast | Ethical Hacker | </b><br>
+📍 Norton University | Passionate about Network Engineering, Penetration Testing, Risk Assessment, and Process Automation | 🧩 Building my cybersecurity portfolio step by step
 </p>
 
 
@@ -41,8 +41,8 @@ Looking for Internship / Junior role in Cybersecurity
 This repository is my **Cybersecurity Learning Portfolio**, showcasing my progress in:
 
 - 🧠 **Networking & System Fundamentals**  
-- 🔍 **Vulnerability Assessment & Penetration Testing**  
-- ⚙️ **Scripting, Automation, and Exploitation**  
+- 🔍 **Vulnerability Assessment, Risk Analysis & Penetration Testing**  
+- ⚙️ **Scripting, Automation, Exploitation and Security Tooling**  
 - 🛡️ **Incident Response & Defensive Techniques**
 
 It reflects my **hands-on practice**, **analytical mindset**, and **commitment to continuous learning** in the field of cybersecurity.
@@ -86,7 +86,7 @@ I use this repository as both a personal documentation space and a demonstration
 | **SEHE Final Exam Lab** | Designed and deployed a complete ethical hacking environment for final assessment |
 | **DVWA Level Exploits** | Practiced web-based vulnerability discovery and exploitation |
 | **Network Scanning Toolkit (Python)** | Automated enumeration using Nmap and Python socket libraries |
-| **Metasploit Web VA Lab** | Performed exploitation and post-exploitation using Metasploit Framework |
+| **Security Validation Lab** | Conducted controlled vulnerability validation using Metasploit Framework |
 | **Web Recon Automation** | Developed scripts for Shodan and Subdomain enumeration |
 | **Active Directory Practice Setup** | Configured and tested privilege escalation in Windows Server |
 | **Vulnerability Assessment and Penetration Tester** | Do VAPT with Network, Web, Wireless|
@@ -134,7 +134,7 @@ To strengthen my ability to analyze, document, and communicate complex technical
 | **Full Stack Development (Learning)** | Python (Flask, Django), HTML, CSS, JavaScript, SQLite, REST APIs |
 
 🧠 Focus Areas:  
-Networking • Vulnerability Assessment •Penetration Tester • Exploitation • Documentation • Continuous Improvement  
+Networking • Risk Assessment • Compliance Awareness • Vulnerability Assessment •Penetration Tester • Exploitation • Documentation • Continuous Improvement  
 
 ---
 
@@ -142,7 +142,8 @@ Networking • Vulnerability Assessment •Penetration Tester • Exploitation �
 
 🚀 Expanding my knowledge through hands-on labs, Building my cybersecurity portfolio step by step, certifications, and CTFs:
 
-- 🔒 Penetration Testing (TryHackMe / HackTheBox)  
+- 🔒 Penetration Testing (TryHackMe / HackTheBox / Portswigger)
+- - 🔒 Vulnerability Management & Risk Prioritization  
 - 🌐 Web Application Security (OWASP Top 10 & Bug Bounty Basics)  
 - 🧩 Cyber Defense, SIEM, and Incident Response  
 - 🧰 Building automation tools in Python and Bash
