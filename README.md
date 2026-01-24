@@ -40,7 +40,7 @@ Looking for Internship / Junior role in Cybersecurity
 
 This repository is my **Cybersecurity Learning Portfolio**, showcasing my progress in:
 
-- 🧠 **Networking & System Fundamentals**  
+- 🧠 **Networking & System Security**
 - 🔍 **Vulnerability Assessment, Risk Analysis & Penetration Testing**  
 - ⚙️ **Scripting, Automation, Exploitation and Security Tooling**  
 - 🛡️ **Incident Response & Defensive Techniques**
