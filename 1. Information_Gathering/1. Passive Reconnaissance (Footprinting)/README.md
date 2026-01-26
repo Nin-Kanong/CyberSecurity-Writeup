@@ -37,30 +37,30 @@ Passive Reconnaissance (Footprinting)/
 
 ---
 
-## ✅ Completed Labs Overview
+## Labs Overview
 
-### 🔹 1. Domain & WHOIS Information Gathering
+### 1. Domain & WHOIS Information Gathering
 - Extracted domain registration details using `whois`, `dig`, and online services like ViewDNS.info.
 - Validated findings with VirusTotal to check for malicious history.
 - Mapped IP ranges, DNS records, and contact info for target domains.
 
-### 🔹 2. Email & Username Enumeration
+### 2. Email & Username Enumeration
 - Used `theHarvester` to gather emails from public sources.
 - Leveraged `holehe`, `Sherlock`, and `Maigret` to find social media accounts linked to usernames.
 - Demonstrated how attackers can build attack surfaces using publicly available data.
 
-### 🔹 3. OSINT Frameworks
+### 3. OSINT Frameworks
 - Built automated intelligence maps using **Maltego** (graphical analysis).
 - Automated data collection with **Recon-ng** modules.
 - Used **SpiderFoot** for multi-source OSINT aggregation.
 - Mastered **Google Dorking** techniques to discover exposed files, directories, and devices.
 
-### 🔹 4. Search Engines for Devices & Services
+### 4. Search Engines for Devices & Services
 - Discovered exposed cameras, routers, servers, and IoT devices via **Shodan** and **Censys**.
 - Learned to filter results by location, service type, and vulnerability status.
 - Documented real-world examples of misconfigured systems.
 
-### 🔹 5. Metadata & File Analysis
+### 5. Metadata & File Analysis
 - Extracted hidden metadata from images, PDFs, and documents using `exiftool`.
 - Analyzed file contents with `strings`, `binwalk`, and `file` commands.
 - Showcased how metadata leaks can reveal sensitive information (e.g., GPS coordinates, author names, software versions).
@@ -68,6 +68,8 @@ Passive Reconnaissance (Footprinting)/
 ---
 
 ## 🧾 Lab Methodology
+
+> Objective → Tools → Recon Process → Findings → Analysis → Risk Impact → Remediation Notes → Lessons Learned
 
 Every lab follows a consistent, professional structure:
 - **🎯 Objective**: Clear goal of the exercise  
