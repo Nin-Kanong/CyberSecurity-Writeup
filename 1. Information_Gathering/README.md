@@ -1,4 +1,4 @@
-# 🕵️‍♂️ Information Gathering – Complete Lab Series
+<h1 align="center"> 🕵️‍♂️ Information Gathering Lab Series </h1> 
 
 > *This folder contains my fully completed and documented reconnaissance labs — the foundational phase of ethical hacking and penetration testing. All passive and active intelligence-gathering techniques have been practiced, validated, and professionally reported.*
 
@@ -48,6 +48,7 @@ All active scanning and enumeration techniques are **fully documented**:
 ---
 
 ## 🧾 Lab Methodology
+> Objective → Tools → Recon Process → Findings → Analysis → Risk Impact → Remediation Notes → Lessons Learned
 
 Every lab follows a consistent, professional structure:
 - **🎯 Objective**: Clear goal of the exercise  
@@ -87,3 +88,6 @@ If you’re reviewing this portfolio and have suggestions, collaboration ideas, 
 - 🐱 [GitHub Profile](https://github.com/Nin-Kanong)
 
 > 💡 *“Reconnaissance is not optional — it’s the difference between guessing and knowing.”*
+---
+
+<h2 align="center"> Last Update: January/26/2026 </h2>
