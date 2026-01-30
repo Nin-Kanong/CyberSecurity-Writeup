@@ -123,6 +123,7 @@ Real-world simulations and academic work demonstrating applied skills:
 - [SalaCyber: IT Security Essential](https://github.com/user-attachments/files/23103411/2.Nin.Kanong.pdf)
 - [SalaCyber: Ethical Hacking Essential](https://github.com/user-attachments/files/23103435/3.Nin.Kanong.pdf)
 - [Complete Ethical Hacking MasterClass](https://github.com/user-attachments/files/23103442/1.Nin.Kanong.pdf)
+- [Cisco Certified Ethical_Hacker](https://github.com/user-attachments/files/24969364/Ethical_Hacker_certificate_ninkanong200620-gmail-com_9f2ea453-5f60-4bf0-886f-bff6f3fea8a1.pdf)
 
 ### 🧰 Technical Skills
 | Category | Tools & Technologies |
